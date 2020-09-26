@@ -12,6 +12,25 @@ public struct NeonRounded: ViewModifier {
     public var cornerRadius: CGFloat = NeonDefaultValues.cornerRadius
     public var shadowRadius: CGFloat = NeonDefaultValues.shadowRadius
     
+    public init(color: Color,
+                lineWidth: CGFloat? = nil,
+                cornerRadius: CGFloat? = nil,
+                shadowRadius: CGFloat? = nil) {
+        self.color = color
+        
+        if let width = lineWidth {
+            self.lineWidth = width
+        }
+        
+        if let radius = cornerRadius {
+            self.cornerRadius = radius
+        }
+        
+        if let radius = shadowRadius {
+            self.shadowRadius = radius
+        }
+    }
+    
     public func body(content: Content) -> some View {
         content
             .padding()
@@ -29,6 +48,21 @@ public struct NeonRectangle: ViewModifier {
     public let color: Color
     public var lineWidth: CGFloat = NeonDefaultValues.lineWidth
     public var shadowRadius: CGFloat = NeonDefaultValues.shadowRadius
+    
+    public init(color: Color,
+                lineWidth: CGFloat? = nil,
+                cornerRadius: CGFloat? = nil,
+                shadowRadius: CGFloat? = nil) {
+        self.color = color
+        
+        if let width = lineWidth {
+            self.lineWidth = width
+        }
+        
+        if let radius = shadowRadius {
+            self.shadowRadius = radius
+        }
+    }
     
     public func body(content: Content) -> some View {
         content
@@ -48,6 +82,21 @@ public struct NeonCircle: ViewModifier {
     public var lineWidth: CGFloat = NeonDefaultValues.lineWidth
     public var shadowRadius: CGFloat = NeonDefaultValues.shadowRadius
     
+    public init(color: Color,
+                lineWidth: CGFloat? = nil,
+                cornerRadius: CGFloat? = nil,
+                shadowRadius: CGFloat? = nil) {
+        self.color = color
+        
+        if let width = lineWidth {
+            self.lineWidth = width
+        }
+        
+        if let radius = shadowRadius {
+            self.shadowRadius = radius
+        }
+    }
+    
     public func body(content: Content) -> some View {
         content
             .padding()
@@ -66,6 +115,21 @@ public struct NeonEllipse: ViewModifier {
     public var lineWidth: CGFloat = NeonDefaultValues.lineWidth
     public var shadowRadius: CGFloat = NeonDefaultValues.shadowRadius
     
+    public init(color: Color,
+                lineWidth: CGFloat? = nil,
+                cornerRadius: CGFloat? = nil,
+                shadowRadius: CGFloat? = nil) {
+        self.color = color
+        
+        if let width = lineWidth {
+            self.lineWidth = width
+        }
+        
+        if let radius = shadowRadius {
+            self.shadowRadius = radius
+        }
+    }
+    
     public func body(content: Content) -> some View {
         content
             .padding()
@@ -83,6 +147,21 @@ public struct NeonCapsule: ViewModifier {
     public let color: Color
     public var lineWidth: CGFloat = NeonDefaultValues.lineWidth
     public var shadowRadius: CGFloat = NeonDefaultValues.shadowRadius
+    
+    public init(color: Color,
+                lineWidth: CGFloat? = nil,
+                cornerRadius: CGFloat? = nil,
+                shadowRadius: CGFloat? = nil) {
+        self.color = color
+        
+        if let width = lineWidth {
+            self.lineWidth = width
+        }
+        
+        if let radius = shadowRadius {
+            self.shadowRadius = radius
+        }
+    }
     
     public func body(content: Content) -> some View {
         content
