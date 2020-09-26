@@ -23,3 +23,6 @@ struct ContentView: View {
     }
 }
 ```
+Dark Neon Example                |    Light Neon Example
+:-------------------------------:|:-------------------------:
+![](.media/basic_neon_dark.png)  |  ![](.media/basic_neon_light.png)
